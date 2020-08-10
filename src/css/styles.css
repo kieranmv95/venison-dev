@@ -1,0 +1,66 @@
+/* variables */
+
+:root {
+    /* font */
+    --font-family: 'Open Sans', sans-serif;
+    --font-base: 16px;
+    --line-height: 1.15;
+
+    /* color */
+    --color-black: #000;
+    --color-white: #FFF;
+    --color-offwhite: #f6f6f6;
+    --color-primary: #9B59B6;
+    --color-secondary: #2ECC71;
+    --color-grey--light: #e2e2e2
+}
+
+
+/* global */
+
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    font-size: var(--font-base);
+    color: var(--color-black);
+}
+
+img { max-width: 100%; }
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+/* typography */
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 { font-size: 3em; }
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+    h2 { font-size: 2em; }
+}
+
+a {
+    color: var(--color-primary);
+}
+
+/* grid */
+
+.container {
+    padding: 0 1em;
+}
+
