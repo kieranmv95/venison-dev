@@ -1,5 +1,5 @@
-import frontEndWizardImg from "./assets/front-end-wizard.png";
-import kieranVenisonImg from "./assets/kieranvenison.png";
+import frontEndWizardImg from "./assets/front-end-wizard.jpg";
+import kieranVenisonImg from "./assets/kieranvenison.jpg";
 
 const projects = [
     {
