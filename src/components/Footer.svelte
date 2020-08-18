@@ -1,6 +1,6 @@
 <style>
     footer { padding: 2em 0; }
-    a { color: var(--color-secondary); }
+    a { color: var(--color-primary); }
     span { color: red; }
 </style>
 

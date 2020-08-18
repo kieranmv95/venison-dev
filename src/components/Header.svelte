@@ -24,6 +24,6 @@
     <div class="container">
         <img src={logoImg} alt="kieran venison logo" />
         <h1>venison.dev</h1>
-        <p>Project showcase for <a href="https://www.kieranvenison.co.uk" target="_blank">Kieran Venison</a></p>
+        <p>Project showcase for <a href="https://www.kieranvenison.co.uk" target="_blank" rel="noopener">Kieran Venison</a></p>
     </div>
 </header>
