@@ -1,4 +1,4 @@
-import frontEndWizardImg from "./assets/front-end-wizard.jpg";
+import frontEndWizardImg from "./assets/front-end-wizard.png";
 import kieranVenisonImg from "./assets/kieranvenison.jpg";
 
 const projects = [

@@ -86,6 +86,13 @@
         margin-bottom: 1em;
     }
 
+    .popup-img {
+        border-radius: 3px;
+        display: block;
+        margin-bottom: 2em;
+        box-shadow: 0 5px 10px rgba(0,0,0, .2);
+    }
+
     @media only screen and (min-width: 768px) {
         .description {
             margin-bottom: 2.75em;
@@ -131,14 +138,6 @@
         li { padding: .8em; }
     }
 
-    .hr-one {
-        margin: 1em 0;
-    }
-
-    .hr-two {
-        margin: 1em 0;
-    }
-
     @media only screen and (min-width: 768px) {
         .hr-two {
             margin: 2em 0;
@@ -155,6 +154,14 @@
                 </div>
                 <h2>{popup_value.popup.title}</h2>
                 <p class="description">{popup_value.popup.description}</p>
+                <a
+                        class="popup-img"
+                        href={popup_value.popup.links.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >
+                    <img src={popup_value.popup.img} alt={`${popup_value.popup.title} project image`} />
+                </a>
                 <div class="links">
                     <a
                         href={popup_value.popup.links.github}
@@ -171,11 +178,6 @@
                         <img src={linkIcon} alt="website link icon">
                     </a>
                 </div>
-                <hr class="hr-one" />
-                <div>
-                    <img src={popup_value.popup.img} alt={`${popup_value.popup.title} project image`} />
-                </div>
-                <hr class="hr-two" />
                 <p class="built-with">Built with</p>
                 <ul>
                     {#each popup_value.popup.languages as language}
