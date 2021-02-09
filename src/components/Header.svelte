@@ -4,9 +4,9 @@
 
 <style>
     header {
-        text-align: center;
         padding: 2em 0;
         margin-bottom: 2rem;
+        text-align: center;
     }
 
     img {

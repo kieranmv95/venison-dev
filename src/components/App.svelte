@@ -1,74 +1,35 @@
 <script>
     import Header from "./Header.svelte";
-    import Project from "./Project.svelte";
-    import projects from "../projects";
-
     import Footer from "./Footer.svelte";
-    import Popup from "./Popup.svelte";
 </script>
 
 <style>
-    .main {
-        min-height: calc(100vh - 82px);
-    }
-
-    .projects {
+    .app {
         display: grid;
-        grid-gap: 1em;
+        min-height: 100vh;
+        grid-template-rows: auto 1fr auto;
     }
 
-    @media only screen and (min-width: 768px) {
-        .projects {
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 0;
-        }
-    }
-    @media only screen and (min-width: 1200px) {
-        .projects {
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 0;
-        }
-    }
-    .coming-soon {
-        position: relative;
-        background: var(--color-offwhite);
-        height: 275px;
+    main {
+        text-align: center;
+        margin-top: 4rem;
     }
 
-    @media only screen and (min-width: 768px) {
-        .coming-soon {
-            height: initial;
-            padding-bottom: 56.25%;
-        }
+    h1 {
+        margin-bottom: 1rem;
     }
 
-    .coming-soon h2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    p {
+        margin-bottom: 1rem;
     }
 </style>
 
-<div class="main">
+<div class="app">
     <Header />
-
-    <div class="projects">
-        {#each projects as project}
-            <Project
-                    name={project.name }
-                    short_description={project.short_description}
-                    src={project.src}
-                    primary_tech={project.primary_tech}
-                    popup_values={project.popup_values}
-            />
-        {/each}
-        <div class="coming-soon">
-            <h2>Coming Soon</h2>
-        </div>
-    </div>
+    <main>
+        <h1>Its moved!</h1>
+        <p>This used to be a showcase of all my work and projects. Its move!</p>
+        <p>It now lives <a href="https://www.kieranvenison.co.uk/projects">here, Check it out!</a></p>
+    </main>
+    <Footer />
 </div>
-
-<Footer />
-
-<Popup />
