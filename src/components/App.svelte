@@ -28,7 +28,7 @@
     <Header />
     <main>
         <h1>Its moved!</h1>
-        <p>This used to be a showcase of all my work and projects. Its move!</p>
+        <p>This used to be a showcase of all my work and projects. Its moved!</p>
         <p>It now lives <a href="https://www.kieranvenison.co.uk/projects">here, Check it out!</a></p>
     </main>
     <Footer />
